@@ -20,15 +20,11 @@ We input the Azure Open AI service definition data and press the Next button and
 
 ![image](https://github.com/user-attachments/assets/f5cd1878-5572-480e-bd2e-9ee09094f0f1)
 
-![image](https://github.com/user-attachments/assets/f7ded4ff-8a04-49a1-934e-c11b6e14fe4c)
 
-![image](https://github.com/user-attachments/assets/d5d60d9d-543c-4ad7-8b10-c44ef7fabd3b)
 
 We verify the service was created
 
-![image](https://github.com/user-attachments/assets/9668483e-d43e-42b5-b6fc-eb5bbd26d96f)
 
-![image](https://github.com/user-attachments/assets/3a523e85-5ce4-4c0f-8e8c-55a735c3e076)
 
 Now we create a AI model deployment
 
