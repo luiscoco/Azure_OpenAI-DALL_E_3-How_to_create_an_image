@@ -34,4 +34,20 @@ Now we create a AI model deployment
 
 ![image](https://github.com/user-attachments/assets/84fe0b61-5a1d-4a11-bc28-95721889ce9b)
 
-## 2. 
+## 2. Create a C# console (.NET9) application with Visual Studio 2022 Community Edition
+
+We run Visual Studio 2022 and we create a new project
+
+![image](https://github.com/user-attachments/assets/0a1a3adf-2ecf-47da-8f73-182cf71c15c4)
+
+We select the C# console application as the project template and press the next button
+
+![image](https://github.com/user-attachments/assets/e86e936a-2c7f-48c9-938d-63f9135a5e6e)
+
+We input the project name and location in the hard disk
+
+![image](https://github.com/user-attachments/assets/e4a462d9-8d21-436c-9bdb-8e8816d3e212)
+
+We select the .NET 9 framework and press the Create button
+
+![image](https://github.com/user-attachments/assets/13705d3f-f356-42bb-96aa-93a0cb5c0667)
