@@ -4,6 +4,10 @@
 
 https://learn.microsoft.com/en-us/azure/ai-services/openai/dall-e-quickstart
 
+This C# code interacts with the **Azure OpenAI** service to generate an image using the **DALL·E 3** model
+
+The application makes use of the **Azure SDK for .NET** to connect to the service and requests an image to be generated based on a text prompt
+
 ## 1. Setting up the Azure OpenAI service with a DALL-E model
 
 We login in Azure Portal and select the Azure OpenAI service
@@ -44,8 +48,6 @@ Now we create a AI model deployment
 
 ![image](https://github.com/user-attachments/assets/8a9202dc-cf5d-489a-ad33-f9523906c90b)
 
-
-
 ## 2. Create a C# console (.NET9) application with Visual Studio 2022 Community Edition
 
 We run Visual Studio 2022 and we create a new project
@@ -58,17 +60,74 @@ We select the C# console application as the project template and press the next 
 
 We input the project name and location in the hard disk
 
-
-
 We select the .NET 9 framework and press the Create button
 
 ![image](https://github.com/user-attachments/assets/13705d3f-f356-42bb-96aa-93a0cb5c0667)
 
 ## 3. We load the Azure Open AI Nuget pakcakes
 
-![image](https://github.com/user-attachments/assets/31235fb5-f4e6-41b8-8570-d2622dcc8342)
+![image](https://github.com/user-attachments/assets/5ad58671-dfb2-4964-aaf9-48a5541c97b0)
 
 ## 4. We enter the application source code
+
+The code uses Azure's **DALL·E 3** model to generate an image based on a text description
+
+In this case, it generates an image of a "**BMW iX2 black**" and outputs the URL where the generated image can be accessed
+
+**Setting up the Azure OpenAI client**:
+
+The endpoint is the URL where the **DALL·E** model is hosted on Azure
+
+**credentials** uses an API key (**ApiKeyCredential**) to authenticate the application to the **Azure OpenAI** service
+
+**deploymentName** specifies the name of the deployed DALL·E model (in this case, "**dall-e-3**")
+
+**Initializing the OpenAI client**:
+
+The **AzureOpenAIClient** object is created using the endpoint and credentials, allowing communication with the Azure OpenAI service
+
+**Accessing the DALL·E model**:
+
+The **ImageClient** is retrieved from the OpenAI client using the model's deployment name (dall-e-3). This client is responsible for handling image generation task
+
+**Generating an image**:
+
+The **GenerateImageAsync()** method is called to request an image generation. The input prompt is "a BMW iX2 black", specifying the image the user wants to generate
+
+The image generation options specify the size of the image as 1024x1024 pixels (GeneratedImageSize.W1024xH1024)
+
+**Output the generated image URL**:
+
+The method returns an image generation result, and the **URI (URL)** of the generated image is printed to the console using **Console.WriteLine()**
+
+See the application source code:
+
+```csharp
+using Azure;
+using Azure.AI.OpenAI;
+using OpenAI.Images;
+using System.ClientModel;
+using static System.Environment;
+
+var endpoint = new Uri("https://mydalleluiscoco.openai.azure.com/");
+var credentials = new ApiKeyCredential("e37cd32e8d41409cafaa17471944f930");
+var deploymentName = "dall-e-3";
+
+var openAIClient = new AzureOpenAIClient(endpoint, credentials);
+
+// Corrected deployment name
+ImageClient chatClient = openAIClient.GetImageClient("dall-e-3");
+
+var imageGeneration = await chatClient.GenerateImageAsync(
+        "a BMW iX2 black",
+        new ImageGenerationOptions()
+        {
+            Size = GeneratedImageSize.W1024xH1024
+        }
+    );
+
+Console.WriteLine(imageGeneration.Value.ImageUri);
+```
 
 
 
