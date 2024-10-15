@@ -36,7 +36,6 @@ Now we create a AI model deployment
 
 ![image](https://github.com/user-attachments/assets/4a7ff54f-fa43-4cba-b4fd-8a68270243b8)
 
-![image](https://github.com/user-attachments/assets/84fe0b61-5a1d-4a11-bc28-95721889ce9b)
 
 ## 2. Create a C# console (.NET9) application with Visual Studio 2022 Community Edition
 
