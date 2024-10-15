@@ -1,5 +1,9 @@
 # How to create an Image with Azure OpenAI DALL-E
 
+**Note:** for more information about this sample see the official Microsoft web page
+
+https://learn.microsoft.com/en-us/azure/ai-services/openai/dall-e-quickstart
+
 ## 1. Setting up the Azure OpenAI service with a DALL-E model
 
 We login in Azure Portal and select the Azure OpenAI service
