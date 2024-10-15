@@ -20,19 +20,26 @@ We input the Azure Open AI service definition data and press the Next button and
 
 ![image](https://github.com/user-attachments/assets/f5cd1878-5572-480e-bd2e-9ee09094f0f1)
 
+![image](https://github.com/user-attachments/assets/85d8c955-859b-4fe1-970f-4ce7d9a635df)
+
+![image](https://github.com/user-attachments/assets/c845f026-337e-40f6-9a4b-7cc816dd0255)
 
 
 We verify the service was created
 
+![image](https://github.com/user-attachments/assets/7c5de2f4-b9db-4a43-a127-920d0f2758d9)
 
+![image](https://github.com/user-attachments/assets/4ac96bf4-6955-4d17-b219-0eabb836c4fc)
 
 Now we create a AI model deployment
 
+![image](https://github.com/user-attachments/assets/709b1852-1853-4ace-a3db-206755442482)
 
+![image](https://github.com/user-attachments/assets/41fc8f1c-2131-4564-b5de-6ba9d5b6d471)
 
-![image](https://github.com/user-attachments/assets/4a7ff54f-fa43-4cba-b4fd-8a68270243b8)
+![image](https://github.com/user-attachments/assets/9c9aa7ca-dcaa-44c4-a17b-4c8d1c4c22ab)
 
-![image](https://github.com/user-attachments/assets/d1ca59db-19f5-4af4-b66e-6fe5200ee8ec)
+![image](https://github.com/user-attachments/assets/1e440377-c4b8-4104-a28e-7e7a4b4d1e30)
 
 
 ## 2. Create a C# console (.NET9) application with Visual Studio 2022 Community Edition
