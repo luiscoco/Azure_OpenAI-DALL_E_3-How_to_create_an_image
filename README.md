@@ -129,6 +129,12 @@ var imageGeneration = await chatClient.GenerateImageAsync(
 Console.WriteLine(imageGeneration.Value.ImageUri);
 ```
 
-
-
 ## 5. We run the application
+
+After running the application in Visual Studio we get this output
+
+![image](https://github.com/user-attachments/assets/3eebb002-be5a-4cbb-81e2-4071d4dd1bb8)
+
+We can press Ctrl+Click on the hyperlink and the image will be opened in a new internet browser tab
+
+![image](https://github.com/user-attachments/assets/fa9ebf86-158d-4c61-b9f8-b40043301783)
