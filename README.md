@@ -28,7 +28,7 @@ We verify the service was created
 
 Now we create a AI model deployment
 
-![image](https://github.com/user-attachments/assets/cfb50ba4-27b7-4b49-b5db-21b3c9ff947d)
+
 
 ![image](https://github.com/user-attachments/assets/4a7ff54f-fa43-4cba-b4fd-8a68270243b8)
 
