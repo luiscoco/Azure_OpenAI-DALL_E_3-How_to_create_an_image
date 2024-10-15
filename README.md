@@ -16,7 +16,7 @@ We press in the Create button
 
 We input the Azure Open AI service definition data and press the Next button and finally the Create button
 
-![image](https://github.com/user-attachments/assets/88356a49-7940-4686-a08e-f2df0d70ec92)
+![image](https://github.com/user-attachments/assets/4f9ce363-8927-44c8-8801-336c9917ab74)
 
 ![image](https://github.com/user-attachments/assets/f5cd1878-5572-480e-bd2e-9ee09094f0f1)
 
